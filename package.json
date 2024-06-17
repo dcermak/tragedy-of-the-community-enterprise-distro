@@ -1,0 +1,11 @@
+{
+  "name": "tragedy-of-the-community-enterprise-distro",
+  "version": "0.0.1",
+  "description": "Slides for the presentation The Tragedy of the Community Enterprise Distribution",
+  "author": "Dan Čermák <dcermak@suse.com>",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "reveal.js": "^5.1.0"
+  }
+}
