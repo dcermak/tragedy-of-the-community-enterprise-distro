@@ -19,7 +19,7 @@
 #+REVEAL_TITLE_SLIDE: <h2 class="title">%t</h2>
 #+REVEAL_TITLE_SLIDE: <p class="subtitle" style="color: Gray;">%s</p>
 #+REVEAL_TITLE_SLIDE: <p class="author">%a</p>
-#+REVEAL_TITLE_SLIDE: <div style="float:left"><a href="https://www.devconf.info/cz/" target="_blank"><img src="./media/osc24_logo.jpg" height="50px"/></a></div>
+#+REVEAL_TITLE_SLIDE: <div style="float:left"><a href="https://events.opensuse.org/conferences/oSC24" target="_blank"><img src="./media/osc24_logo.jpg" height="50px" style="margin-bottom:-12px"/>&nbsp; oSC24</a></div>
 #+REVEAL_TITLE_SLIDE: <div style="float:right;font-size:35px;"><p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#"><a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
 #+REVEAL_TITLE_SLIDE: CC BY 4.0 <i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i></a></p></div>
 
@@ -41,7 +41,94 @@ Dan Čermák
 @@html: </div>@@
 
 
-* 
+* The Tragedy
+
+#+ATTR_REVEAL: :frag appear
+#+begin_quote
+Tragedy is a genre of drama based on human suffering and, mainly, the terrible or sorrowful events that befall a main character.
+Traditionally, the intention of tragedy is to invoke an accompanying catharsis, or a "pain [that] awakens pleasure,” for the audience.
+#+end_quote
+
+
+* The Tragedies?
+
+#+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/screenshot-centos_projects_shifts_focus_to_centos_stream.png"/>@@
+
+#+REVEAL: split
+
+* The CentOS / Leap Tragedy
+
+#+ATTR_REVEAL: :frag appear
+users want a distribution:
+#+ATTR_REVEAL: :frag appear
+- free
+- supported for a long time
+- stable as the enterprise offering
+- predictability
+
+#+ATTR_REVEAL: :frag appear
+OS developers want:
+#+ATTR_REVEAL: :frag appear
+- easy pathways to contribute
+
+#+ATTR_REVEAL: :frag appear
+ISVs want:
+#+ATTR_REVEAL: :frag appear
+- contribute/influence the distro
+- rebuild custom spins
+- predictability
+
+** Contribution paths
+
+#+begin_notes
+- traditional path
+- changes go into enterprise offering first
+- community respin can only build on top, not influence
+- only contribution path is "Factory/Fedora first"
+#+end_notes
+
+#+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/old-centos-dev-paths.svg" height="500px"/>@@
+
+** Community first path
+
+#+begin_notes
+- community distro is development target for enterprise offering
+- community can contribute in Fedora & Stream
+- problem: stream changes not guaranteed to be picked into enterprise
+#+end_notes
+
+#+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/centos-stream-dev-paths.svg" height="500px"/>@@
+
+
+** SIGs
+
+** Steering Committee
+
+- decide on high level technical changes
+
+** Rebuilding?
+
+
+* What about Debian?
+
+@@html:<img src="./media/Debian-OpenLogo.svg" height="50px"/>@@
+
+#+ATTR_REVEAL: :frag appear
+- predictable [[https://wiki.debian.org/DebianReleases][release cadence]]
+- [[https://www.debian.org/devel/tech-ctte][technical steering committee]]
+- easy rebuild via debootstrap
+
+
+* What can we learn?
+
+- Leap is in principle a good thing
+- allow for rebuilds outside of OBS (\rightarrow =pbuild=)
+- stick to a schedule & way
+- clear communication
+
 
 * Questions?
 
