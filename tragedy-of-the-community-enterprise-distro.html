@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The Tragedy of the Community Enterprise Linux Distribution</title>
+<meta name="author" content="Dan Čermák"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./node_modules/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="./node_modules/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"/>
+
+<link rel="stylesheet" href="./custom-style.css"/>
+<link rel="stylesheet" href="./node_modules/reveal.js/plugin/highlight/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './node_modules/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2 class="title">The Tragedy of the Community Enterprise Linux Distribution</h2>
+<p class="subtitle" style="color: Gray;"></p>
+<p class="author">Dan Čermák</p>
+<div style="float:left"><a href="https://events.opensuse.org/conferences/oSC24" target="_blank"><img src="./media/osc24_logo.jpg" height="50px" style="margin-bottom:-12px"/>&nbsp; oSC24</a></div>
+<div style="float:right;font-size:35px;"><p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#"><a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+CC BY 4.0 <i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i></a></p></div>
+</section>
+
+<section>
+<section id="slide-org7c7908b">
+<h2 id="org7c7908b">who -u</h2>
+<p>
+Dan Čermák
+</p>
+
+<p>
+ <div style="float:center">
+ <table class="who-table">
+ <tr><td><i class="fab fa-suse"></i></td><td> Software Developer @SUSE, SLE BCI releng</td></tr>
+ <tr><td><i class="fab fa-fedora"></i></td><td> i3 SIG, Package maintainer</td></tr>
+ <tr><td><i class="far fa-heart"></i></td><td> Developer Tools, Testing and Documentation, Home Automation</td></tr>
+ <tr></tr>
+ <tr></tr>
+ <tr><td><i class="fa-solid fa-globe"></i></td><td> <a href="https://dancermak.name/">https://dancermak.name</a></td></tr>
+ <tr><td><i class="fab fa-github"></i></td><td> <a href="https://github.com/dcermak/">dcermak</a></td></tr>
+ <tr><td><i class="fab fa-mastodon"></i></td><td> <a href="https://mastodon.social/@Defolos">@Defolos@mastodon.social</a></td></tr>
+ </table>
+ </div>
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org5e82a03">
+<h2 id="org5e82a03">The Tragedy</h2>
+<blockquote  class="fragment appear">
+<p>
+Tragedy is a genre of drama based on human suffering and, mainly, the terrible or sorrowful events that befall a main character.
+Traditionally, the intention of tragedy is to invoke an accompanying catharsis, or a "pain [that] awakens pleasure,” for the audience.
+</p>
+</blockquote>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org4e8afb4">
+<h2 id="org4e8afb4">The Tragedies?</h2>
+<p class="fragment appear">
+<img src="./media/screenshot-centos_projects_shifts_focus_to_centos_stream.png"/>
+</p>
+
+</section>
+<section id="slide-org4e8afb4-split">
+
+</section>
+</section>
+<section>
+<section id="slide-orgbcad292">
+<h2 id="orgbcad292">The CentOS / Leap Tragedy</h2>
+<p class="fragment appear">
+users want a distribution:
+</p>
+<ul class="fragment appear">
+<li>free</li>
+<li>supported for a long time</li>
+<li>stable as the enterprise offering</li>
+<li>predictability</li>
+
+</ul>
+
+<p class="fragment appear">
+OS developers want:
+</p>
+<ul class="fragment appear">
+<li>easy pathways to contribute</li>
+
+</ul>
+
+<p class="fragment appear">
+ISVs want:
+</p>
+<ul class="fragment appear">
+<li>contribute/influence the distro</li>
+<li>rebuild custom spins</li>
+<li>predictability</li>
+
+</ul>
+
+</section>
+<section id="slide-orgcd3640b">
+<h3 id="orgcd3640b">Contribution paths</h3>
+<aside class="notes">
+<ul>
+<li>traditional path</li>
+<li>changes go into enterprise offering first</li>
+<li>community respin can only build on top, not influence</li>
+<li>only contribution path is "Factory/Fedora first"</li>
+
+</ul>
+
+</aside>
+
+<p class="fragment appear">
+<img src="./media/old-centos-dev-paths.svg" height="500px"/>
+</p>
+
+</section>
+<section id="slide-org97bb970">
+<h3 id="org97bb970">Community first path</h3>
+<aside class="notes">
+<ul>
+<li>community distro is development target for enterprise offering</li>
+<li>community can contribute in Fedora &amp; Stream</li>
+<li>problem: stream changes not guaranteed to be picked into enterprise</li>
+
+</ul>
+
+</aside>
+
+<p class="fragment appear">
+<img src="./media/centos-stream-dev-paths.svg" height="500px"/>
+</p>
+
+
+</section>
+<section id="slide-orge220e78">
+<h3 id="orge220e78">SIGs</h3>
+
+</section>
+<section id="slide-org4427f61">
+<h3 id="org4427f61">Steering Committee</h3>
+<ul>
+<li>decide on high level technical changes</li>
+
+</ul>
+
+</section>
+<section id="slide-org709692a">
+<h3 id="org709692a">Rebuilding?</h3>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org9c7d971">
+<h2 id="org9c7d971">What about Debian?</h2>
+<p>
+<img src="./media/Debian-OpenLogo.svg" height="50px"/>
+</p>
+
+<ul class="fragment appear">
+<li>predictable <a href="https://wiki.debian.org/DebianReleases">release cadence</a></li>
+<li><a href="https://www.debian.org/devel/tech-ctte">technical steering committee</a></li>
+<li>easy rebuild via debootstrap</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org3fc7c70">
+<h2 id="org3fc7c70">What can we learn?</h2>
+<ul>
+<li>Leap is in principle a good thing</li>
+<li>allow for rebuilds outside of OBS (&rarr; <code>pbuild</code>)</li>
+<li>stick to a schedule &amp; way</li>
+<li>clear communication</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org26701a1">
+<h2 id="org26701a1">Questions?</h2>
+<p class="fragment (appear)">
+Answers!
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="./node_modules/reveal.js/dist/reveal.js"></script>
+<script src="./node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="./node_modules/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealHighlight, RevealNotes, history],
+transition: 'none', hash: true
+});
+
+</script>
+</body>
+</html>
