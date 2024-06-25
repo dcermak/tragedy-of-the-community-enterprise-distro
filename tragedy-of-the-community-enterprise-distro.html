@@ -40,8 +40,8 @@ CC BY 4.0 <i class="fab fa-creative-commons"></i> <i class="fab fa-creative-comm
 </section>
 
 <section>
-<section id="slide-org7c7908b">
-<h2 id="org7c7908b">who -u</h2>
+<section id="slide-org694bc9e">
+<h2 id="org694bc9e">who -u</h2>
 <p>
 Dan Čermák
 </p>
@@ -65,65 +65,133 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-org5e82a03">
-<h2 id="org5e82a03">The Tragedy</h2>
-<blockquote  class="fragment appear">
-<p>
-Tragedy is a genre of drama based on human suffering and, mainly, the terrible or sorrowful events that befall a main character.
-Traditionally, the intention of tragedy is to invoke an accompanying catharsis, or a "pain [that] awakens pleasure,” for the audience.
-</p>
-</blockquote>
+<section id="slide-org99077b3">
+<h2 id="org99077b3">The Tragedy</h2>
+<div class="org-src-container">
+
+<pre   ><code class="markdown" data-line-numbers='1-3|5-7'>Tragedy is a genre of drama based on human suffering and,
+mainly, the terrible or sorrowful events that
+befall a main character.
+
+Traditionally, the intention of tragedy is to invoke an
+accompanying catharsis, or a "pain [that] awakens
+pleasure,” for the audience.
+</code></pre>
+</div>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org4e8afb4">
-<h2 id="org4e8afb4">The Tragedies?</h2>
+<section id="slide-orgbdb614b">
+<h2 id="orgbdb614b">The Tragedies?</h2>
 <p class="fragment appear">
 <img src="./media/screenshot-centos_projects_shifts_focus_to_centos_stream.png"/>
 </p>
 
 </section>
-<section id="slide-org4e8afb4-split">
+<section id="slide-orgbdb614b-split">
+
+<p>
+Or this one?
+<img src="./media/screenshot-Furthering_the_evolution_of_CentOS_Stream.png"/>
+</p>
 
 </section>
 </section>
 <section>
-<section id="slide-orgbcad292">
-<h2 id="orgbcad292">The CentOS / Leap Tragedy</h2>
+<section id="slide-orga4a32d2">
+<h2 id="orga4a32d2">The Tragedy of Leap</h2>
 <p class="fragment appear">
+<img src="./media/Leap-green.svg" height="100px"/>
+</p>
+
+<ul>
+<li class="fragment appear">Binary compatible to SLES now</li>
+<li class="fragment appear">no contributor community</li>
+
+</ul>
+
+</section>
+<section id="slide-orgbd43100">
+<h3 id="orgbd43100">Who's successful?</h3>
+<p class="fragment appear">
+<img src="./media/el_by_distro_longterm_line.svg" height="550px"/>
+</p>
+
+</section>
+<section id="slide-org760435d">
+<h3 id="org760435d">What is success?</h3>
+<ul class="fragment appear">
+<li>many users?</li>
+<li>many contributors?</li>
+<li>long term survival/sustainability?</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgcb51d77">
+<h2 id="orgcb51d77">Stakeholders</h2>
+<aside class="notes">
+<p>
 users want a distribution:
 </p>
-<ul class="fragment appear">
+<ul>
 <li>free</li>
 <li>supported for a long time</li>
 <li>stable as the enterprise offering</li>
 <li>predictability</li>
+<li>documentation</li>
 
 </ul>
 
-<p class="fragment appear">
+<p>
 OS developers want:
 </p>
-<ul class="fragment appear">
+<ul>
 <li>easy pathways to contribute</li>
 
 </ul>
 
-<p class="fragment appear">
+<p>
+Admins:
+</p>
+<ul>
+<li>no unexpected updates</li>
+<li>good tooling support (e.g. Ansible)</li>
+
+</ul>
+
+<p>
 ISVs want:
 </p>
-<ul class="fragment appear">
+<ul>
 <li>contribute/influence the distro</li>
 <li>rebuild custom spins</li>
 <li>predictability</li>
 
 </ul>
 
+</aside>
+
+<p class="fragment appear">
+<img src="./media/linux-distro-personas.svg" height="500px"/>
+</p>
+
+
 </section>
-<section id="slide-orgcd3640b">
-<h3 id="orgcd3640b">Contribution paths</h3>
+<section id="slide-org6e49507">
+<h3 id="org6e49507">Why do people contribute?</h3>
+<p class="fragment appear">
+<img src="./media/contribution_movement.svg" height="500px"/>
+</p>
+
+</section>
+<section id="slide-org5289f0e">
+<h3 id="org5289f0e">Contribution paths</h3>
 <aside class="notes">
 <ul>
 <li>traditional path</li>
@@ -140,8 +208,8 @@ ISVs want:
 </p>
 
 </section>
-<section id="slide-org97bb970">
-<h3 id="org97bb970">Community first path</h3>
+<section id="slide-orge90a771">
+<h3 id="orge90a771">Community first path</h3>
 <aside class="notes">
 <ul>
 <li>community distro is development target for enterprise offering</li>
@@ -156,29 +224,78 @@ ISVs want:
 <img src="./media/centos-stream-dev-paths.svg" height="500px"/>
 </p>
 
-
 </section>
-<section id="slide-orge220e78">
-<h3 id="orge220e78">SIGs</h3>
-
-</section>
-<section id="slide-org4427f61">
-<h3 id="org4427f61">Steering Committee</h3>
-<ul>
-<li>decide on high level technical changes</li>
+<section id="slide-org37696b7">
+<h3 id="org37696b7">SIGs</h3>
+<ul class="fragment appear">
+<li>groups empowered to drive (sub-)projects</li>
+<li>path for "externals" to drive innovation</li>
 
 </ul>
 
+<p class="fragment appear">
+<img src="./media/Screenshot-CentOS-SIGs.png" height="500px"/>
+</p>
+
+
 </section>
-<section id="slide-org709692a">
-<h3 id="org709692a">Rebuilding?</h3>
+<section id="slide-orgf5c67f6">
+<h3 id="orgf5c67f6">Steering Committee</h3>
+<p>
+<img src="./media/fesco-fedora-badge.png" height="150px"/>
+</p>
+
+<ul class="fragment appear">
+<li>decide on high level technical changes</li>
+<li>can support smaller contributors</li>
+<li>can gatekeep</li>
+
+</ul>
+
+
+</section>
+<section id="slide-org572c897">
+<h3 id="org572c897">Rebuilding</h3>
+<aside class="notes">
+<ul>
+<li>package rebuilds vs distribution rebuilds</li>
+<li>supports downstream distributions &amp; experimentation</li>
+<li>hopefully trickle back upstream</li>
+<li>our tooling very much tied to OBS</li>
+
+</ul>
+
+</aside>
+
+<p>
+<img src="./media/rebuilding.svg" height="500px"/>
+</p>
+
+
+</section>
+<section id="slide-org96ce49d">
+<h3 id="org96ce49d">Documentation</h3>
+<ul class="fragment appear">
+<li>crucial for <b>everyone</b></li>
+<li></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org36f7106">
+<h3 id="org36f7106">Foundation</h3>
+<ul class="fragment appear">
+<li>ensure independence of a project</li>
+
+</ul>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org9c7d971">
-<h2 id="org9c7d971">What about Debian?</h2>
+<section id="slide-org605f0c1">
+<h2 id="org605f0c1">What about Debian?</h2>
 <p>
 <img src="./media/Debian-OpenLogo.svg" height="50px"/>
 </p>
@@ -187,17 +304,44 @@ ISVs want:
 <li>predictable <a href="https://wiki.debian.org/DebianReleases">release cadence</a></li>
 <li><a href="https://www.debian.org/devel/tech-ctte">technical steering committee</a></li>
 <li>easy rebuild via debootstrap</li>
+<li>being first helps</li>
 
 </ul>
-
 
 </section>
 </section>
 <section>
-<section id="slide-org3fc7c70">
-<h2 id="org3fc7c70">What can we learn?</h2>
+<section id="slide-org25a35d0">
+<h2 id="org25a35d0"><span class="todo TODO">TODO</span> Alma</h2>
+<p>
+<img src="./media/AlmaLinux_Icon_Logo.svg" height="50px"/>
+</p>
+
+<ul class="fragment appear">
+<li>independent foundation</li>
+<li></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org71afeda">
+<h2 id="org71afeda">And Rocky?</h2>
+<ul class="fragment appear">
+<li>old CentOS 2.0</li>
+<li></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org4fd23f0">
+<h2 id="org4fd23f0">Catharsis</h2>
 <ul>
-<li>Leap is in principle a good thing</li>
+<li>Leap is in principle a good thing (for some)</li>
+<li>CentOS stream is in principle a good thing too</li>
 <li>allow for rebuilds outside of OBS (&rarr; <code>pbuild</code>)</li>
 <li>stick to a schedule &amp; way</li>
 <li>clear communication</li>
@@ -208,8 +352,20 @@ ISVs want:
 </section>
 </section>
 <section>
-<section id="slide-org26701a1">
-<h2 id="org26701a1">Questions?</h2>
+<section id="slide-org1ef37c6">
+<h2 id="org1ef37c6"><span class="todo TODO">TODO</span> Links</h2>
+<ul>
+<li><i class="fa-brands fa-github"></i> <a href="https://github.com/brianclemens/rocky-stats"><code>brianclemens/rocky-stats</code></a></li>
+<li><a href="https://arxiv.org/abs/2101.10291">arXiv:2101.10291v3</a></li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org764a2ac">
+<h2 id="org764a2ac">Questions? / Discussion</h2>
 <p class="fragment (appear)">
 Answers!
 </p>
