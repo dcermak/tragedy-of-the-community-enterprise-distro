@@ -43,11 +43,16 @@ Dan Čermák
 
 * The Tragedy
 
-#+ATTR_REVEAL: :frag appear
-#+begin_quote
-Tragedy is a genre of drama based on human suffering and, mainly, the terrible or sorrowful events that befall a main character.
-Traditionally, the intention of tragedy is to invoke an accompanying catharsis, or a "pain [that] awakens pleasure,” for the audience.
-#+end_quote
+#+ATTR_REVEAL: :code_attribs data-line-numbers='1-3|5-7'
+#+begin_src markdown
+Tragedy is a genre of drama based on human suffering and,
+mainly, the terrible or sorrowful events that
+befall a main character.
+
+Traditionally, the intention of tragedy is to invoke an
+accompanying catharsis, or a "pain [that] awakens
+pleasure,” for the audience.
+#+end_src
 
 
 * The Tragedies?
@@ -57,27 +62,66 @@ Traditionally, the intention of tragedy is to invoke an accompanying catharsis, 
 
 #+REVEAL: split
 
-* The CentOS / Leap Tragedy
+Or this one?
+@@html:<img src="./media/screenshot-Furthering_the_evolution_of_CentOS_Stream.png"/>@@
+
+* The Tragedy of Leap
 
 #+ATTR_REVEAL: :frag appear
-users want a distribution:
+@@html:<img src="./media/Leap-green.svg" height="100px"/>@@
+
+#+ATTR_REVEAL: :frag (appear appear) :frag_idx: (1 2)
+- Binary compatible to SLES now
+- no contributor community
+
+# -> few users
+# -> look at other distros that are "more successful"
+# -> Debian, CentOS Family,
+
+** Who's successful?
+
 #+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/el_by_distro_longterm_line.svg" height="550px"/>@@
+
+** What is success?
+
+#+ATTR_REVEAL: :frag appear
+- many users?
+- many contributors?
+- long term survival/sustainability?
+
+
+* Stakeholders
+
+#+begin_notes
+users want a distribution:
 - free
 - supported for a long time
 - stable as the enterprise offering
 - predictability
+- documentation
 
-#+ATTR_REVEAL: :frag appear
 OS developers want:
-#+ATTR_REVEAL: :frag appear
 - easy pathways to contribute
 
-#+ATTR_REVEAL: :frag appear
+Admins:
+- no unexpected updates
+- good tooling support (e.g. Ansible)
+
 ISVs want:
-#+ATTR_REVEAL: :frag appear
 - contribute/influence the distro
 - rebuild custom spins
 - predictability
+#+end_notes
+
+#+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/linux-distro-personas.svg" height="500px"/>@@
+
+
+** Why do people contribute?
+
+#+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/contribution_movement.svg" height="500px"/>@@
 
 ** Contribution paths
 
@@ -102,14 +146,49 @@ ISVs want:
 #+ATTR_REVEAL: :frag appear
 @@html:<img src="./media/centos-stream-dev-paths.svg" height="500px"/>@@
 
-
 ** SIGs
+
+#+ATTR_REVEAL: :frag appear
+- groups empowered to drive (sub-)projects
+- path for "externals" to drive innovation
+
+#+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/Screenshot-CentOS-SIGs.png" height="500px"/>@@
+
 
 ** Steering Committee
 
-- decide on high level technical changes
+@@html:<img src="./media/fesco-fedora-badge.png" height="150px"/>@@
 
-** Rebuilding?
+#+ATTR_REVEAL: :frag appear
+- decide on high level technical changes
+- can support smaller contributors
+- can gatekeep
+
+
+** Rebuilding
+
+#+begin_notes
+- package rebuilds vs distribution rebuilds
+- supports downstream distributions & experimentation
+- hopefully trickle back upstream
+- our tooling very much tied to OBS
+#+end_notes
+
+@@html:<img src="./media/rebuilding.svg" height="500px"/>@@
+
+
+** Documentation
+
+#+ATTR_REVEAL: :frag appear
+- crucial for *everyone*
+-
+
+
+** Foundation
+
+#+ATTR_REVEAL: :frag appear
+- ensure independence of a project
 
 
 * What about Debian?
@@ -120,17 +199,48 @@ ISVs want:
 - predictable [[https://wiki.debian.org/DebianReleases][release cadence]]
 - [[https://www.debian.org/devel/tech-ctte][technical steering committee]]
 - easy rebuild via debootstrap
+- being first helps
 
+* TODO Alma
 
-* What can we learn?
+@@html:<img src="./media/AlmaLinux_Icon_Logo.svg" height="50px"/>@@
 
-- Leap is in principle a good thing
+#+ATTR_REVEAL: :frag appear
+- independent foundation
+-
+
+* And Rocky?
+
+#+ATTR_REVEAL: :frag appear
+- old CentOS 2.0
+-
+
+* Catharsis
+
+- Leap is in principle a good thing (for some)
+- CentOS stream is in principle a good thing too
 - allow for rebuilds outside of OBS (\rightarrow =pbuild=)
 - stick to a schedule & way
 - clear communication
 
+# - no commercial entity behind it
+# - foundation behind it
+# - enthusiasts need something independent
+# - the market is slow AF
+# - distro needs to have up to date enough base
+# - need a core-mission or value add
+# - contributors need a vision and need to know that their contributions will have a long lasting impact!!
 
-* Questions?
+# - maybe look at NixOS?
+
+
+* TODO Links
+
+- @@html:<i class="fa-brands fa-github"></i>@@ [[https://github.com/brianclemens/rocky-stats][=brianclemens/rocky-stats=]]
+- [[https://arxiv.org/abs/2101.10291][arXiv:2101.10291v3]]
+
+
+* Questions? / Discussion
 
 #+ATTR_REVEAL: :frag (appear)
 Answers!
