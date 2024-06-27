@@ -78,24 +78,13 @@ Or this one?
 - Binary compatible to SLES now
 - very small contributor community
 
+#+ATTR_REVEAL: :frag appear
+Is it successful?
 # -> few users
 # -> look at other distros that are "more successful"
 # -> Debian, CentOS Family,
 
-** What is success?
-
-#+ATTR_REVEAL: :frag appear
-- many users?
-- many contributors?
-- long term survival/sustainability?
-
-
-** Who's successful?
-
-#+ATTR_REVEAL: :frag appear
-@@html:<img src="./media/el_by_distro_longterm_line.svg" height="550px"/>@@
-
-* Stakeholders
+** Stakeholders
 
 #+begin_notes
 users want a distribution:
@@ -116,22 +105,38 @@ ISVs want:
 - contribute/influence the distro
 - rebuild custom spins
 - predictability
+- time to certify/stabilize
 #+end_notes
 
 #+ATTR_REVEAL: :frag appear
 @@html:<img src="./media/linux-distro-personas.svg" height="500px"/>@@
 
-** What do users want?
+# ** What do users want?
+
+# #+ATTR_REVEAL: :frag (appear)
+# - LTS
+# - predictability
+# - not too old code base
+
+
+** What is success?
 
 #+ATTR_REVEAL: :frag (appear)
-- LTS
-- predictability
-- not too old code base
+- many users?
+- many contributors?
+- long term survival/sustainability?
+
+
+** Who's successful?
+
+#+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/el_by_distro_longterm_line.svg" height="550px"/>@@
 
 
 * Why do people contribute?
 #+begin_notes
 - https://arxiv.org/abs/2101.10291
+\rightarrow people contribute so that their contribution *matters* and stays around *for others*
 #+end_notes
 
 #+ATTR_REVEAL: :frag appear
@@ -194,31 +199,56 @@ ISVs want:
 
 ** Documentation
 
+#+begin_notes
+- documentation required for "ordinary" users, especially around peculiarities
+- also: forums, stackoverflow
+#+end_notes
+
 #+ATTR_REVEAL: :frag (appear)
 - crucial for *everyone*
-- 
+- not only your own, but also community contributed
 
 
-** Foundation
+** Foundation / Independence
+#+begin_notes
+- foundations must be truly independent
+- why independent? \rightarrow my contribution must survive the death of a sponsor
+#+end_notes
 
 #+ATTR_REVEAL: :frag (appear)
-- ensure independence of a project
-- must be truly independent
+- foundation can ensure independence of a project
+- contributions must not be lost on "death" of the sponsor
+
+
+* What's your special sauce?
+
+#+begin_notes
+- being special in some way can help
+- limits your audience potentially if focus too much
+#+end_notes
+
+@@html:<img src="./media/special-sauce.png" height="500px"/>@@
 
 
 * What about Debian?
 
-@@html:<img src="./media/Debian-OpenLogo.svg" height="10px"/>@@
+@@html:<img src="./media/Debian-OpenLogo.svg" height="100px"/>@@
 
 #+ATTR_REVEAL: :frag (appear)
 - predictable [[https://wiki.debian.org/DebianReleases][release cadence]]
 - [[https://www.debian.org/devel/tech-ctte][technical steering committee]]
 - easy rebuild via debootstrap + all tooling in the distro
+- a lot of documentation
 - being first helps
+
 
 * TODO Alma
 
-@@html:<img src="./media/AlmaLinux_Icon_Logo.svg" height="50px"/>@@
+#+begin_notes
+- Alma still based on RHEL code base
+#+end_notes
+
+@@html:<img src="./media/AlmaLinux_Icon_Logo.svg" height="100px"/>@@
 
 #+ATTR_REVEAL: :frag (appear)
 - independent foundation
@@ -232,26 +262,29 @@ ISVs want:
 - all backed by CIQ
 
 * Catharsis
+#+begin_notes
+- no commercial entity behind it
+- foundation behind it
+- enthusiasts need something independent
+- the market is slow AF
+- distro needs to have up to date enough base
+- need a core-mission or value add
+- contributors need a vision and need to know that their contributions will have a long lasting impact!!
+#+end_notes
 
 #+ATTR_REVEAL: :frag (appear)
 - Leap is in principle a good thing (for some)
 - CentOS stream is in principle a good thing too
+- independent entity
+- have a special sauce
 - allow for rebuilds outside of OBS (\rightarrow =pbuild=)
 - stick to a schedule & way
 - clear communication
 
-# - no commercial entity behind it
-# - foundation behind it
-# - enthusiasts need something independent
-# - the market is slow AF
-# - distro needs to have up to date enough base
-# - need a core-mission or value add
-# - contributors need a vision and need to know that their contributions will have a long lasting impact!!
-
 # - maybe look at NixOS?
 
 
-* TODO Links
+* Links
 
 - @@html:<i class="fa-brands fa-github"></i>@@ [[https://github.com/brianclemens/rocky-stats][=brianclemens/rocky-stats=]]
 - [[https://arxiv.org/abs/2101.10291][arXiv:2101.10291v3]]
