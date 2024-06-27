@@ -67,21 +67,20 @@ Or this one?
 
 * The Tragedy of Leap
 
+#+begin_notes
+- tries(?) to follow the CentOS model
+#+end_notes
+
 #+ATTR_REVEAL: :frag appear
 @@html:<img src="./media/Leap-green.svg" height="100px"/>@@
 
 #+ATTR_REVEAL: :frag (appear appear) :frag_idx: (1 2)
 - Binary compatible to SLES now
-- no contributor community
+- very small contributor community
 
 # -> few users
 # -> look at other distros that are "more successful"
 # -> Debian, CentOS Family,
-
-** Who's successful?
-
-#+ATTR_REVEAL: :frag appear
-@@html:<img src="./media/el_by_distro_longterm_line.svg" height="550px"/>@@
 
 ** What is success?
 
@@ -90,6 +89,11 @@ Or this one?
 - many contributors?
 - long term survival/sustainability?
 
+
+** Who's successful?
+
+#+ATTR_REVEAL: :frag appear
+@@html:<img src="./media/el_by_distro_longterm_line.svg" height="550px"/>@@
 
 * Stakeholders
 
@@ -117,8 +121,18 @@ ISVs want:
 #+ATTR_REVEAL: :frag appear
 @@html:<img src="./media/linux-distro-personas.svg" height="500px"/>@@
 
+** What do users want?
 
-** Why do people contribute?
+#+ATTR_REVEAL: :frag (appear)
+- LTS
+- predictability
+- not too old code base
+
+
+* Why do people contribute?
+#+begin_notes
+- https://arxiv.org/abs/2101.10291
+#+end_notes
 
 #+ATTR_REVEAL: :frag appear
 @@html:<img src="./media/contribution_movement.svg" height="500px"/>@@
@@ -148,7 +162,7 @@ ISVs want:
 
 ** SIGs
 
-#+ATTR_REVEAL: :frag appear
+#+ATTR_REVEAL: :frag (appear)
 - groups empowered to drive (sub-)projects
 - path for "externals" to drive innovation
 
@@ -160,7 +174,7 @@ ISVs want:
 
 @@html:<img src="./media/fesco-fedora-badge.png" height="150px"/>@@
 
-#+ATTR_REVEAL: :frag appear
+#+ATTR_REVEAL: :frag (appear)
 - decide on high level technical changes
 - can support smaller contributors
 - can gatekeep
@@ -180,43 +194,46 @@ ISVs want:
 
 ** Documentation
 
-#+ATTR_REVEAL: :frag appear
+#+ATTR_REVEAL: :frag (appear)
 - crucial for *everyone*
--
+- 
 
 
 ** Foundation
 
-#+ATTR_REVEAL: :frag appear
+#+ATTR_REVEAL: :frag (appear)
 - ensure independence of a project
+- must be truly independent
 
 
 * What about Debian?
 
-@@html:<img src="./media/Debian-OpenLogo.svg" height="50px"/>@@
+@@html:<img src="./media/Debian-OpenLogo.svg" height="10px"/>@@
 
-#+ATTR_REVEAL: :frag appear
+#+ATTR_REVEAL: :frag (appear)
 - predictable [[https://wiki.debian.org/DebianReleases][release cadence]]
 - [[https://www.debian.org/devel/tech-ctte][technical steering committee]]
-- easy rebuild via debootstrap
+- easy rebuild via debootstrap + all tooling in the distro
 - being first helps
 
 * TODO Alma
 
 @@html:<img src="./media/AlmaLinux_Icon_Logo.svg" height="50px"/>@@
 
-#+ATTR_REVEAL: :frag appear
+#+ATTR_REVEAL: :frag (appear)
 - independent foundation
--
+- "playground" on CentOS Stream base
+- own build system + devtools
 
-* And Rocky?
+* TODO And Rocky?
 
-#+ATTR_REVEAL: :frag appear
+#+ATTR_REVEAL: :frag (appear)
 - old CentOS 2.0
--
+- all backed by CIQ
 
 * Catharsis
 
+#+ATTR_REVEAL: :frag (appear)
 - Leap is in principle a good thing (for some)
 - CentOS stream is in principle a good thing too
 - allow for rebuilds outside of OBS (\rightarrow =pbuild=)
@@ -241,6 +258,3 @@ ISVs want:
 
 
 * Questions? / Discussion
-
-#+ATTR_REVEAL: :frag (appear)
-Answers!
