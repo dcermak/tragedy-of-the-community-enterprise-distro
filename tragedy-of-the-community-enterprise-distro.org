@@ -43,7 +43,7 @@ Dan Čermák
 
 * The Tragedy
 
-#+ATTR_REVEAL: :code_attribs data-line-numbers='1-3|5-7'
+#+ATTR_REVEAL: :code_attribs data-line-numbers='1-3|5-7|1-7'
 #+begin_src markdown
 Tragedy is a genre of drama based on human suffering and,
 mainly, the terrible or sorrowful events that
@@ -132,10 +132,28 @@ ISVs want:
 #+ATTR_REVEAL: :frag appear
 @@html:<img src="./media/el_by_distro_longterm_line.svg" height="550px"/>@@
 
+* Why users matter
+#+begin_notes
+- users = "free testing"
+- users are the primary recruitment pool for contributors
+#+end_notes
 
-* Why do people contribute?
+#+ATTR_REVEAL: :frag (appear)
+@@html:<img src="./media/contributor_funnel.svg"></img>@@
+
+
+** Why do people contribute?
 #+begin_notes
 - https://arxiv.org/abs/2101.10291
+
+Reciprocity – duty to give back
+Kinship - do it for the community
+Own-Use - scratch your own itch
+
+change over time:
+- own use & ideology \downarrow
+- Fun, Kinship, Reciprocity \uparrow (double)
+
 \rightarrow people contribute so that their contribution *matters* and stays around *for others*
 #+end_notes
 
@@ -200,13 +218,12 @@ ISVs want:
 ** Documentation
 
 #+begin_notes
-- documentation required for "ordinary" users, especially around peculiarities
-- also: forums, stackoverflow
+- crucial for *everyone*
+- documentation required for "ordinary" users, especially around peculiarities \rightarrow SUSEism…
+- also: forums, stackoverflow (i.e. community contributed ones)
 #+end_notes
 
-#+ATTR_REVEAL: :frag (appear)
-- crucial for *everyone*
-- not only your own, but also community contributed
+@@html:<img src="./media/documentation.png" height="500px"/>@@
 
 
 ** Foundation / Independence
@@ -255,16 +272,19 @@ ISVs want:
 - "playground" on CentOS Stream base
 - own build system + devtools
 
-* TODO And Rocky?
+
+* And Rocky?
+
+@@html:<img src="./media/Rocky_Linux_wordmark.svg" height="100px"/>@@
 
 #+ATTR_REVEAL: :frag (appear)
 - old CentOS 2.0
 - all backed by CIQ
 
+
 * Catharsis
 #+begin_notes
-- no commercial entity behind it
-- foundation behind it
+- no commercial entity behind it, need a foundation
 - enthusiasts need something independent
 - the market is slow AF
 - distro needs to have up to date enough base
@@ -280,8 +300,6 @@ ISVs want:
 - allow for rebuilds outside of OBS (\rightarrow =pbuild=)
 - stick to a schedule & way
 - clear communication
-
-# - maybe look at NixOS?
 
 
 * Links
